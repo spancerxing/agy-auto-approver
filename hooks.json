@@ -1,0 +1,16 @@
+{
+  "auto-approver": {
+    "PreToolUse": [
+      {
+        "matcher": ".*",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "python3 ~/.gemini/config/plugins/auto-approver/approve.py",
+            "timeout": 15
+          }
+        ]
+      }
+    ]
+  }
+}

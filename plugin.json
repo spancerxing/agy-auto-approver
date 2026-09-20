@@ -1,0 +1,5 @@
+{
+  "name": "auto-approver",
+  "version": "1.0.0",
+  "description": "Smart auto-approval plugin for Antigravity CLI (agy) with configurable safety guards and audit logging."
+}

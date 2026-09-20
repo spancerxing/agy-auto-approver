@@ -1,0 +1,30 @@
+{
+  "mode": "safe",
+  "highRiskAction": "ask",
+  "enableAuditLog": true,
+  "logFile": "auto-approver.log",
+  "dangerousPatterns": [
+    "\\b(?:sudo|su)(?:\\s|$)",
+    "\\brm\\s+-[rfRF]*\\s+(/|~|\\*|\\./\\*)",
+    "\\bgit\\s+push\\b[^;&|]*?(?:--force(?:-with-lease)?|-f)(?:\\s|$)",
+    "\\bgit\\s+reset\\s+--hard\\b",
+    "\\bchmod\\s+(?:-R\\s+)?777(?:\\s|$)",
+    "\\bmkfs(?:\\s|$)",
+    "\\bdd\\s+if="
+  ],
+  "alwaysAllowTools": [
+    "view_file",
+    "write_to_file",
+    "replace_file_content",
+    "read_url_content",
+    "search_web",
+    "manage_task",
+    "schedule",
+    "ask_question",
+    "generate_image",
+    "send_message",
+    "invoke_subagent",
+    "define_subagent",
+    "manage_subagents"
+  ]
+}
